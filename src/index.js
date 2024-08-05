@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const packageJsonPath = path.join(__dirname, "package.json");
+const packageJsonPath = path.resolve(__dirname, "../..package.json");
 const projectRootPathJsconfig = path.resolve(__dirname, "../../");
 const pathFiles = path.resolve(__dirname, "../../cypress/e2e/");
 function modifyPackageJson() {
