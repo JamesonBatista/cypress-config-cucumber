@@ -1,0 +1,29 @@
+{
+  "name": "cypress-config-cucumber",
+  "version": "1.0.0",
+  "description": "cypress-config-cucumber",
+  "main": "src",
+  "peerDependencies": {
+    "cypress": ">=10.0.0"
+  },
+  "scripts": {
+    "preinstall": "npm i cypress-cucumber-preprocessor",
+    "postinstall": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesonBatista/cypress-config-cucumber.git"
+  },
+  "keywords": [],
+  "files": [
+    "src",
+    "index.js"
+  ],
+  "types": "src",
+  "author": "Jam Batista QA Specialist <batistadado@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JamesonBatista/cypress-config-cucumber/issues"
+  },
+  "homepage": "https://github.com/JamesonBatista/cypress-config-cucumber#readme"
+}
