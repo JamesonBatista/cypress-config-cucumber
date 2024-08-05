@@ -1,9 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 
-const packageJsonPath = path.resolve(__dirname, "../..package.json");
-const projectRootPathJsconfig = path.resolve(__dirname, "../../");
-const pathFiles = path.resolve(__dirname, "../../cypress/e2e/");
+const packageJsonPath = path.resolve(__dirname, "package.json");
+const pathFiles = path.resolve(__dirname, "cypress/e2e/");
 function modifyPackageJson() {
   fs.readFile(packageJsonPath, "utf8", (err, data) => {
     if (err) {
@@ -77,7 +76,7 @@ function updateConfigFile() {
 
 updateConfigFile();
 
-const jsconfigFilePath = path.join(projectRootPathJsconfig, "jsconfig.json");
+const jsconfigFilePath = path.join(__dirname, "jsconfig.json");
 
 const contentTsConfig = `{
 "compilerOptions": {
